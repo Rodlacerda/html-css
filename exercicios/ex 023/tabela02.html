@@ -13,7 +13,13 @@
         table {
             width: 500px;
             border-collapse: collapse;
+        }
 
+        caption {
+            font-size: 1,8em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(128, 128, 128);
         }
 
         td, th {
@@ -44,11 +50,12 @@
        
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
-                <th>% da pop. Total</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
+                <th scope="col" style="width: 100px;">% da pop. Total</th>
             </tr>
         </thead>
 
@@ -219,7 +226,7 @@
 
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>213.421.037</strong></td>
                 <td>100%</td>
             </tr>
